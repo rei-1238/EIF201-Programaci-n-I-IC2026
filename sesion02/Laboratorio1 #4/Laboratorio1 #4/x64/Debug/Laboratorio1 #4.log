@@ -1,0 +1,8 @@
+﻿  Laboratorio1 #4.cpp
+  NombreCompleto.cpp
+C:\Users\Rachel\Practica\EIF201-Programaci-n-I-IC2026\sesion02\Laboratorio1 #4\NombreCompleto.cpp(9,23): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Rachel\Practica\EIF201-Programaci-n-I-IC2026\sesion02\Laboratorio1 #4\NombreCompleto.cpp(15,27): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Rachel\Practica\EIF201-Programaci-n-I-IC2026\sesion02\Laboratorio1 #4\NombreCompleto.cpp(16,28): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Rachel\Practica\EIF201-Programaci-n-I-IC2026\sesion02\Laboratorio1 #4\NombreCompleto.cpp(56,33): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Generando código...
+  Laboratorio1 #4.vcxproj -> C:\Users\Rachel\Practica\EIF201-Programaci-n-I-IC2026\sesion02\Laboratorio1 #4\x64\Debug\Laboratorio1 #4.exe
