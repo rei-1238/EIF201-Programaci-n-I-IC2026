@@ -47,3 +47,5 @@
 *.suo
 *.db
 *.VC.db
+*.vsidx
+*.ipch
