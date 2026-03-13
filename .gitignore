@@ -43,3 +43,7 @@
 *.suo
 *.db
 *.VC.db
+.vs/
+*.suo
+*.db
+*.VC.db
