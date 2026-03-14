@@ -13,6 +13,8 @@ int main()
     for(int i=0; i < 4; i++){
         std::cout << "elementos" << array[i];
     }
+
+    std::cout << "Nueva prueba";
     return 0;
 }
 
