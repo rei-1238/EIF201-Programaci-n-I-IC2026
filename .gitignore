@@ -39,13 +39,19 @@
 
 # debug information files
 *.dwo
-.vs/
-*.suo
-*.db
-*.VC.db
+
 .vs/
 *.suo
 *.db
 *.VC.db
 *.vsidx
 *.ipch
+Debug/
+Release/
+
+.vs/
+Debug/
+Release/
+*.ipch
+
+
