@@ -215,7 +215,7 @@ namespace spacecolony {
 
     void Colony::showControlBoard() const {
         std::cout << "\n Panel de control: " << name
-            << " en " << planet << " ====\n";
+            << " en " << planet << "\n";
 
         for (int i = 0; i < domeCount; i++) {
             if (domes[i] == 0) {
