@@ -127,7 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Beneficio.cpp" />
+    <ClCompile Include="LoteHoney.cpp" />
+    <ClCompile Include="LoteLavado.cpp" />
+    <ClCompile Include="LoteNatural.cpp" />
     <ClCompile Include="sesion08.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Beneficio.h" />
+    <ClInclude Include="LoteCafe.h" />
+    <ClInclude Include="LoteHoney.h" />
+    <ClInclude Include="LoteLavado.h" />
+    <ClInclude Include="LoteNatural.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

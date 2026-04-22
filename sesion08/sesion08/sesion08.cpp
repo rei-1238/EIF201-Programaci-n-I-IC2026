@@ -1,19 +1,52 @@
-// sesion08.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
-
+#include"LoteHoney.h"
+#include "LoteLavado.h"
+#include"LoteNatural.h"
+#include"Beneficio.h"
+#include<string>
 #include <iostream>
+using namespace std;
+using namespace EIF201;
+
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Beneficio beneficio;
+
+    //Datos que pide el constructor
+    beneficio.agregarLote(new LoteHoney("finca rei", 70.0, 1235, 50));
+    beneficio.agregarLote(new LoteNatural("finca let", 20.0, 400, 20, 13));
+    beneficio.agregarLote(new LoteLavado("finca ken", 80.2, 1000, 20));
+
+    cout << " CATALOGO: " << endl;
+    beneficio.mostrarInventario();
+    cout << endl;
+
+    cout << "Valor total del inventario: "
+        << beneficio.valorTotalInventario() << endl;
+
+    LoteCafe* mejor = beneficio.loteMayorCalidad();
+    if (mejor != nullptr) {
+        cout << "Lote con mayor calidad: " << endl;
+        cout << mejor->toString() << endl;
+    }
+
+    cout << endl;
+    cout << "Cantidad proceso Lavado: "
+        << beneficio.contadorPorProceso("Lavado") << endl;
+
+    cout << "Cantidad proceso Natural: "
+        << beneficio.contadorPorProceso("Natural") << endl;
+
+    cout << "Promedio calidad Lavado: "
+        << beneficio.promedioCalidadPorProceso("Lavado") << endl;
+
+    cout << "Promedio calidad Natural: "
+        << beneficio.promedioCalidadPorProceso("Natural") << endl;
+
+    return 0;
+
+
+
 }
 
-// Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
-// Depurar programa: F5 o menú Depurar > Iniciar depuración
-
-// Sugerencias para primeros pasos: 1. Use la ventana del Explorador de soluciones para agregar y administrar archivos
-//   2. Use la ventana de Team Explorer para conectar con el control de código fuente
-//   3. Use la ventana de salida para ver la salida de compilación y otros mensajes
-//   4. Use la ventana Lista de errores para ver los errores
-//   5. Vaya a Proyecto > Agregar nuevo elemento para crear nuevos archivos de código, o a Proyecto > Agregar elemento existente para agregar archivos de código existentes al proyecto
-//   6. En el futuro, para volver a abrir este proyecto, vaya a Archivo > Abrir > Proyecto y seleccione el archivo .sln
